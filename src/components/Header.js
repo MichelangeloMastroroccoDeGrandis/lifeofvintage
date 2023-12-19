@@ -1,19 +1,40 @@
+import styles from './css/Header.module.css'
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import React, { useState } from 'react';
+
 const Header = () => {
-    return (<header className="App-header">
-        
-                <h1>Life of Vintage </h1>
-                <nav>
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleNav = () => {
+        setIsOpen(!isOpen);
+    }
+
+    return (<header className={styles.header}>
+            <div className={styles.container}>
+                <h1>life of vintage</h1>
+                <div className={styles.hamburger} onClick={toggleNav}>
+                    <div className={`${styles.hamburgerLine} ${isOpen ? styles.cross1 : ''}`}></div>
+                    <div className={`${styles.hamburgerLine} ${isOpen ? styles.cross2 : ''}`}></div>
+                </div>
+            </div>
+                <nav className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
                     <ul>
-                        <li><AnchorLink href="#manifesto"><button>Manifesto</button></AnchorLink></li>
-                        <li><AnchorLink href="#services"><button>Servizi</button></AnchorLink></li>
-                        <li><AnchorLink href="#biographies"><button>Biografie</button></AnchorLink></li>
-                        <li><AnchorLink href="#contacts"><button>Contatti</button></AnchorLink></li>
+                        <li><span>1</span><AnchorLink href="#manifesto"><button>Manifesto</button></AnchorLink></li>
+                        <li><span>2</span><AnchorLink href="#services"><button>Servizi</button></AnchorLink></li>
+                        <li><span>3</span><AnchorLink href="#biographies"><button>Biografie</button></AnchorLink></li>
+                        <li><span>4</span><AnchorLink href="#contacts"><button>Contatti</button></AnchorLink></li>
                     </ul>
                 </nav>
-                <p>Lorem ipsum dolor sit amet,</p> 
-                <p>consectetur adipiscing elit. </p>
+
+                <div className={styles.payoff}>
+                <p>Archives,</p>
+                <p>Artisan &</p>
+                <p>Artistic Upcycling</p>
+                </div>
             </header>)
+
 };
+
 
 export default Header;

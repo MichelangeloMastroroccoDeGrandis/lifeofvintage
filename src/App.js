@@ -1,4 +1,4 @@
-import './App.css';
+import './components/css/App.css';
 import Header from './components/Header';
 import Manifesto from './components/Manifesto';
 import Services from './components/Services';

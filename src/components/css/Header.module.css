@@ -1,0 +1,71 @@
+.header {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+}
+
+.nav {
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    transition: height 1s ease-out;
+}
+
+.nav.open {
+    height: 100%;
+    overflow: hidden;
+    max-height: 300px;
+}
+
+.nav ul {
+    display: inline-block;
+    text-align: left;
+    list-style: none;
+}
+
+.nav span {
+    display: inline-block;
+    font-size: 24px;
+    transform: translateY(-24px);
+    margin: 0 12px;
+}
+
+.nav button {
+    color: #fff;
+    background-color: transparent;
+    font-size: 48px;
+    border: 0;
+}
+
+.hamburger {
+    position: absolute;
+    top: 0;
+    right:0;
+    padding: .25em;
+    
+}
+
+.hamburgerLine {
+    background-color: #fff;
+    height: 3px;
+    width: 20px;
+    margin: .5em;
+    transition: transform .5s ease-out;
+}
+
+.cross1 {
+    transform: rotate(-45deg) translateX(-9px);
+}
+
+.cross2 {
+    transform: rotate(45deg) translateX(-7px);
+}
+
+.payoff {
+    position: absolute;
+    bottom: 25px;
+    margin: 30px;
+    font-size: 64px;
+}
