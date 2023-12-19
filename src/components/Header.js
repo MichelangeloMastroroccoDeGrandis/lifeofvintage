@@ -11,6 +11,8 @@ const Header = () => {
                         <li><AnchorLink href="#contacts"><button>Contatti</button></AnchorLink></li>
                     </ul>
                 </nav>
+                <p>Lorem ipsum dolor sit amet,</p> 
+                <p>consectetur adipiscing elit. </p>
             </header>)
 };
 
