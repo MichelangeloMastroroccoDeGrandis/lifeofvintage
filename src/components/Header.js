@@ -12,7 +12,7 @@ const Header = () => {
 
     return (<header className={styles.header}>
             <div className={styles.container}>
-                <h1>life of vintage</h1>
+                <h1 className={styles.logo}>life of vintage</h1>
                 <div className={styles.hamburger} onClick={toggleNav}>
                     <div className={`${styles.hamburgerLine} ${isOpen ? styles.cross1 : ''}`}></div>
                     <div className={`${styles.hamburgerLine} ${isOpen ? styles.cross2 : ''}`}></div>
