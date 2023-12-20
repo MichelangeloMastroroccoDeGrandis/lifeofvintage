@@ -10,7 +10,7 @@
     height: 0;
     overflow: hidden;
     text-align: center;
-    transition: height 1s ease-out;
+    transition: height .5s ease-out;
 }
 
 .nav.open {
@@ -66,6 +66,44 @@
 .payoff {
     position: absolute;
     bottom: 25px;
-    margin: 30px;
     font-size: 64px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.payoff p {
+      /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 45s linear infinite;
+  -webkit-animation: my-animation 45s linear infinite;
+  animation: my-animation 45s linear infinite;
+
+}
+
+@-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+
 }

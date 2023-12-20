@@ -27,10 +27,9 @@ const Header = () => {
                     </ul>
                 </nav>
 
+                
                 <div className={styles.payoff}>
-                <p>Archives,</p>
-                <p>Artisan &</p>
-                <p>Artistic Upcycling</p>
+                <p>Archives, Artisan & Artistic Upcycling</p>
                 </div>
             </header>)
 
