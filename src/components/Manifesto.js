@@ -13,7 +13,7 @@ const Manifesto = () => {
                 <div className={styles.lineBottom}></div>
             </div>
             <div className={styles.textRightBottom}>
-                <p>Vivamus quis lorem at tellus vulputate 
+                <p className={styles.margin}>Vivamus quis lorem at tellus vulputate 
                     luctus at nec diam. Ut ac elementum urna. 
                     Quisque blandit, magna sit amet vulputate 
                     rhoncus, sem justo pharetra nunc, sit amet 
@@ -22,14 +22,14 @@ const Manifesto = () => {
         </div>
         <div className={styles.container}>
         <div className={styles.lineRight}></div>
-            <p>Fusce dignissim, mauris sit amet scelerisque 
+            <p className={styles.margin}>Fusce dignissim, mauris sit amet scelerisque 
                 ultricies, diam eros congue dolor, ac tristique 
                 tortor ex et diam. Ut vel lacus tristique erat 
                 maximus ultricies id sed massa.</p>
                 <div className={styles.lineRight}></div>
         </div>
         <div className={styles.container}>
-            <p>Maecenas est dolor, dignissim a tempor in, 
+            <p className={styles.margin}>Maecenas est dolor, dignissim a tempor in, 
                 mollis ac nisl. Nullam sit amet neque est. 
                 Duis tincidunt, neque eu aliquam euismod, 
                 felis mi tempor tortor, vitae gravida enim 

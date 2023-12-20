@@ -1,3 +1,4 @@
+import corp from './video/corp.mp4';
 const Services = ()=> {
 return (
     <div id="services">
@@ -6,7 +7,9 @@ return (
         </div>
         <div class="container">
             <div class="aziende">
-                <img />
+            <div class="coverAziende">
+                <video src={corp} autoplay>
+                </video></div>
                 <h2>Per le Aziende</h2>
                 <ul>
                     <li><p>Catalogazione, archiviazione e digitalizzazione archivi aziendali (da giugno)</p></li>
@@ -19,7 +22,7 @@ return (
                 </ul>
             </div>
             <div class="retail">
-                <img />
+            <div class="coverRetail"></div>
                 <h2>Per il Retail</h2>
                 <ul>
                     <li><p>Vendita prodotto vintage per inserimento in store</p></li>
@@ -37,7 +40,7 @@ return (
                 </ul>
             </div>
             <div class="designer">
-                <img />
+                <div class="coverDesigner"></div>
                 <h2>Per i designer</h2>
                 <ul>
                     <li><p>Consultazione archivi con possibilità di noleggio</p></li>

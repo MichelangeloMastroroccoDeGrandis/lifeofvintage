@@ -20,11 +20,11 @@ const Header = () => {
             </div>
                 <nav className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
                     <ul>
-                        <li><span>1</span><AnchorLink href="#manifesto"><button>Manifesto</button></AnchorLink></li>
-                        <li><span>2</span><AnchorLink href="#services"><button>Servizi</button></AnchorLink></li>
-                        <li><span>3</span><AnchorLink href="#biographies"><button>Biografie</button></AnchorLink></li>
-                        <li><span>4</span><AnchorLink href="#contacts"><button>Contatti</button></AnchorLink></li>
-                    </ul>
+                        <li><span>1</span><AnchorLink offset='100' href="#manifesto"><button>Manifesto</button></AnchorLink></li>
+                        <li><span>2</span><AnchorLink offset='100' href="#services"><button>Servizi</button></AnchorLink></li>
+                        <li><span>3</span><AnchorLink offset='100' href="#biographies"><button>Biografie</button></AnchorLink></li>
+                        <li><span>4</span><AnchorLink offset='100' href="#contacts"><button>Contatti</button></AnchorLink></li>
+                    </ul> 
                 </nav>
 
                 
