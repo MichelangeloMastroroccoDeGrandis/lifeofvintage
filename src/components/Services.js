@@ -1,17 +1,20 @@
 import corp from './video/corp.mp4';
+import styles from './css/Services.module.css';
 const Services = ()=> {
 return (
-    <div id="services">
-        <div class="scrolling-text-container">
-            <h1 class="scrolling-text">Our Services</h1>
+    <div id="services" className={styles.services}>
+        <div>
+            <h1 className={styles.serviceList}>Our Services</h1>
         </div>
-        <div class="container">
-            <div class="aziende">
-            <div class="coverAziende">
-                <video src={corp} autoplay>
-                </video></div>
-                <h2>Per le Aziende</h2>
-                <ul>
+        <div className={styles.container}>
+            <div id="aziende">
+            <div>
+                <video src={corp} autoPlay={true} muted />
+            </div>
+                
+               
+                <h2 className={styles.serviceListTitle}>Per le Aziende</h2>
+                <ul className={styles.serviceListPoint}>
                     <li><p>Catalogazione, archiviazione e digitalizzazione archivi aziendali (da giugno)</p></li>
                     <li><p>Perizie e valutazioni degli archivi stilistici aziendali</p></li>
                     <li><p>Valutazioni economiche per inventari aziendali</p></li>
@@ -21,10 +24,12 @@ return (
                     <li><p>Rivalutazione fine serie e campionari inutilizzati attraverso progetti di upcycling in edizione limitata da rivendere nei canali di distribuzione aziendali come capsule speciali</p></li>
                 </ul>
             </div>
-            <div class="retail">
-            <div class="coverRetail"></div>
-                <h2>Per il Retail</h2>
-                <ul>
+            <div id="retail">
+            <div class="coverRetail">
+            <video src={corp} autoPlay={true} muted />
+            </div>
+                <h2 className={styles.serviceListTitle}>Per il Retail</h2>
+                <ul className={styles.serviceListPoint}>
                     <li><p>Vendita prodotto vintage per inserimento in store</p></li>
                     <li><p>Presentazione campionari di capi upcycled o re-worked</p></li>
                     <li><p>Progettazione di corner vintage coerenti con il pricing dello store e gestione di eventuali allestimenti e riassortimenti</p></li>
@@ -39,10 +44,12 @@ return (
                     <li><p>Visual brand presentations and events</p></li>
                 </ul>
             </div>
-            <div class="designer">
-                <div class="coverDesigner"></div>
-                <h2>Per i designer</h2>
-                <ul>
+            <div id="designer">
+                <div>
+                <video src={corp} autoPlay={true} muted />
+                </div>
+                <h2 className={styles.serviceListTitle}>Per i designer</h2>
+                <ul className={styles.serviceListPoint}>
                     <li><p>Consultazione archivi con possibilità di noleggio</p></li>
                     <li><p>Consultazione archivi con possibilità di acquisto</p></li>
                     <li><p>Ricerche personalizzate su commissione per acquisto o noleggio capi in archivi specifici</p></li>

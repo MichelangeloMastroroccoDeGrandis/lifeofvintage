@@ -1,0 +1,28 @@
+.services {
+    margin: 1em;
+    padding: 1em;
+    display: block;
+}
+
+.serviceList { 
+    margin: 1em 0;
+}
+
+.serviceListTitle {
+    font-size: 48px;
+    margin: 1em 0;
+}
+
+.serviceListPoint {
+    margin: 1em .5em;
+}
+
+.serviceListPoint li {
+    list-style:lower-alpha;
+    word-wrap: normal;
+}
+
+.serviceListPoint p {
+    font-size: 22px;
+    line-height: 2;
+}
