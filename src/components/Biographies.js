@@ -3,10 +3,11 @@ import antonioMastrorocco from './images/antonioMastrorocco.jpeg';
 const Biographies = (props) => {
 return (
     <div id="biographies">
-        <h1>Biographies</h1>
+        <h1>Biografie</h1>
         <div className={styles.container} >
             <div className={styles.backgroundImage} style={{backgroundImage: `url("${antonioMastrorocco}")`}}>
-                <div className={styles.bioWrap}>
+                <div className={styles.textWrap}>
+                    <div className={styles.bioWrap}>
                     <h2>'57 / '81</h2>
                     <p>Nato ad Acquaviva delle Fonti il 18/07/1957.
                     Residente a Bologna in Via Jacopo di Paolo 31.
@@ -19,7 +20,7 @@ return (
                 </div>
                 <div className={styles.bioWrap}>
                     <h2>'82 / '84</h2>
-                    <p>1984è art director in Max Information, 
+                    <p>è art director in Max Information, 
                         Agenzia Internazionale di Comunicazione, 
                         svolgendo, sotto la Direzione Creativa, 
                         tutte le attività di supporto alla realizzazione 
@@ -76,6 +77,8 @@ return (
                         di rielaborazione attraverso la trasformazione della funzione 
                         d’uso denominata upcycling.</p>
                 </div>
+                </div>
+                
             </div>
         </div>
     </div>

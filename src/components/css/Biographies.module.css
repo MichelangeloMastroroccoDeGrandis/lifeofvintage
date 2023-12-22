@@ -1,9 +1,49 @@
 .container {
-    margin: 1em 2em;
+    margin: 2em 0;
 }
 
 .backgroundImage {
-    position: sticky;
-    position: webkit-sticky;
     top: 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: top;
+}
+
+.containerBio {
+    overflow: auto;
+}
+
+.textWrap {
+    width: 100%;
+    max-width: 750px;
+    overflow-x: auto;
+    white-space: nowrap;
+    height: inherit;
+    position: relative;
+    overflow-y: hidden;
+    background: rgba(121, 118, 105, .5);
+    background: linear-gradient(90deg, rgba(121,118,105,1) 0%, rgba(121,118,105,0) 100%);
+}
+
+.bioWrap {
+    padding-right: 2em;
+    line-height: 1.5;
+    display: inline-block;
+    width: 75%;
+    height: inherit;
+}
+
+.bioWrap h2 {
+    font-size: 42px;
+}
+
+.bioWrap p {
+    font-size: 16px;
+    text-wrap: balance;
+    position: absolute;
+    bottom: 0;
+    width: inherit;
 }
