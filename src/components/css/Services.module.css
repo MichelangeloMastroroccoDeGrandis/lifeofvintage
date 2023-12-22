@@ -1,28 +1,26 @@
-.services {
-    margin: 1em;
-    padding: 1em;
+.container {
     display: block;
+    margin: 0 2em;
 }
 
-.serviceList { 
-    margin: 1em 0;
+.wrapVideo {
+    width: 100%;
+}
+
+.wrapVideo video {
+    width: inherit;
 }
 
 .serviceListTitle {
-    font-size: 48px;
+    font-size: 42px;
     margin: 1em 0;
 }
 
-.serviceListPoint {
-    margin: 1em .5em;
+.serviceList {
+    margin: 1em 2em;
 }
 
-.serviceListPoint li {
-    list-style:lower-alpha;
-    word-wrap: normal;
-}
-
-.serviceListPoint p {
-    font-size: 22px;
+.serviceList p {
+    font-size: 24px;
     line-height: 2;
 }

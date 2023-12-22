@@ -1,0 +1,9 @@
+.container {
+    margin: 1em 2em;
+}
+
+.backgroundImage {
+    position: sticky;
+    position: webkit-sticky;
+    top: 0;
+}

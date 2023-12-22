@@ -1,20 +1,22 @@
 import corp from './video/corp.mp4';
+import retail from './video/retail.mp4';
+import designer from './video/designer.mp4';
 import styles from './css/Services.module.css';
 const Services = ()=> {
 return (
     <div id="services" className={styles.services}>
-        <div>
-            <h1 className={styles.serviceList}>Our Services</h1>
-        </div>
+
+        <h1>Our Services</h1>
+
         <div className={styles.container}>
             <div id="aziende">
-            <div>
-                <video src={corp} autoPlay={true} muted />
+            <div className={styles.wrapVideo}>
+                <video src={corp} autoPlay={true} loop={true} muted />
             </div>
                 
                
                 <h2 className={styles.serviceListTitle}>Per le Aziende</h2>
-                <ul className={styles.serviceListPoint}>
+                <ul className={styles.serviceList}>
                     <li><p>Catalogazione, archiviazione e digitalizzazione archivi aziendali (da giugno)</p></li>
                     <li><p>Perizie e valutazioni degli archivi stilistici aziendali</p></li>
                     <li><p>Valutazioni economiche per inventari aziendali</p></li>
@@ -25,11 +27,11 @@ return (
                 </ul>
             </div>
             <div id="retail">
-            <div class="coverRetail">
-            <video src={corp} autoPlay={true} muted />
+            <div className={styles.wrapVideo}>
+            <video src={retail} autoPlay={true} loop={true} muted />
             </div>
                 <h2 className={styles.serviceListTitle}>Per il Retail</h2>
-                <ul className={styles.serviceListPoint}>
+                <ul className={styles.serviceList}>
                     <li><p>Vendita prodotto vintage per inserimento in store</p></li>
                     <li><p>Presentazione campionari di capi upcycled o re-worked</p></li>
                     <li><p>Progettazione di corner vintage coerenti con il pricing dello store e gestione di eventuali allestimenti e riassortimenti</p></li>
@@ -45,11 +47,11 @@ return (
                 </ul>
             </div>
             <div id="designer">
-                <div>
-                <video src={corp} autoPlay={true} muted />
+                <div className={styles.wrapVideo}>
+                <video src={designer} autoPlay={true} loop={true} muted />
                 </div>
                 <h2 className={styles.serviceListTitle}>Per i designer</h2>
-                <ul className={styles.serviceListPoint}>
+                <ul className={styles.serviceList}>
                     <li><p>Consultazione archivi con possibilità di noleggio</p></li>
                     <li><p>Consultazione archivi con possibilità di acquisto</p></li>
                     <li><p>Ricerche personalizzate su commissione per acquisto o noleggio capi in archivi specifici</p></li>

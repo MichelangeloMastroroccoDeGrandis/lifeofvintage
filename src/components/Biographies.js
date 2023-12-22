@@ -1,10 +1,12 @@
+import styles from './css/Biographies.module.css';
+import antonioMastrorocco from './images/antonioMastrorocco.jpeg';
 const Biographies = (props) => {
 return (
     <div id="biographies">
         <h1>Biographies</h1>
-        <div class="container">
-            <div class="img">
-                <div>
+        <div className={styles.container} >
+            <div className={styles.backgroundImage} style={{backgroundImage: `url("${antonioMastrorocco}")`}}>
+                <div className={styles.bioWrap}>
                     <h2>'57 / '81</h2>
                     <p>Nato ad Acquaviva delle Fonti il 18/07/1957.
                     Residente a Bologna in Via Jacopo di Paolo 31.
@@ -15,7 +17,7 @@ return (
                     Frequenta un Corso Biennale al CESA Centro Europeo 
                     Studi Aziendali in Comunicazione e Marketing.</p>
                 </div>
-                <div>
+                <div className={styles.bioWrap}>
                     <h2>'82 / '84</h2>
                     <p>1984è art director in Max Information, 
                         Agenzia Internazionale di Comunicazione, 
@@ -27,7 +29,7 @@ return (
                         creativi spaziano dal concept di comunicazione 
                         alla realizzazione di commercial televisivi.</p>
                 </div>
-                <div>
+                <div className={styles.bioWrap}>
                     <h2>1985</h2>
                     <p>con Iosa-Ghini, Scozzari, Jori e Carpinteri fonda 
                         ALCUNI GIOVANI OCCIDENTALI, una boutique creativa 
@@ -38,7 +40,7 @@ return (
                         lunga collaborazione con il gruppo WP Lavori in Corso 
                         dove cura tutte le attività di comunicazione per quasi quindici anni.</p>
                 </div>
-                <div>
+                <div className={styles.bioWrap}>
                     <h2>1990</h2>
                     <p>l’attività di consulenza è molto diversificata ed iniziano 
                         le collaborazioni in ambito artistico con illustratori 
@@ -48,7 +50,7 @@ return (
                         Nick Scott, Tommaso Sartori e con filmakers come Maurizio 
                         Finotto e Flavio Kampah.</p>
                 </div>
-                <div>
+                <div className={styles.bioWrap}>
                     <h2>2000</h2>
                     <p>fonda con Stefano Martinetto Futurenet, una life style 
                         company nata per diffondere nei mercati internazionali 
@@ -58,14 +60,14 @@ return (
                         Puma con Neil Barrett, Alexander McQueen, Mihara Yasuhiro 
                         e con Philippe Stark.</p>
                 </div>
-                <div>
+                <div className={styles.bioWrap}>
                     <h2>2009</h2>
                     <p>vince un concorso Internaziopnale per la progettazione 
                         della installazione per la città metropolitana di Bologna 
                         nell’ambito delle manifestazioni ufficiali del World Expo 
                         2010 di Shanghai nella sezione UBPA, Urban Best Practice Area.</p>
                 </div>
-                <div>
+                <div className={styles.bioWrap}>
                     <h2>2010</h2>
                     <p>nasce il progetto Antonio Mastrorocco One Off un laboratorio 
                         artigianale di realizzazione di oggetti e scenografie in 
