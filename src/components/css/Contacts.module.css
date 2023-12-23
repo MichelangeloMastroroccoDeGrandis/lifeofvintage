@@ -1,0 +1,10 @@
+.container {
+    display: block;
+    margin: 0 2em;
+    padding-bottom: 1em;
+}
+
+.container p {
+    line-height: 2;
+    margin: 1em 0;
+}
