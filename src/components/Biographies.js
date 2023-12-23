@@ -2,7 +2,7 @@ import styles from './css/Biographies.module.css';
 const Biographies = ({arr, img}) => {
 
     const textBio = arr.map(el => {
-        return  <div key={el.key} className={styles.bioWrap}>
+        return  <div key={el.id} className={styles.bioWrap}>
                     <h2>{el.year}</h2>
                     <p>{el.description}</p>
                 </div>
