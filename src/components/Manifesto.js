@@ -6,13 +6,13 @@ const Manifesto = () => {
         <div className={styles.container}>
             <div>
                 <div className={styles.lineTop}></div>
-                    <p className={styles.textLeftTop}>
+                    <p className={styles.textLeft}>
                     Pellentesque auctor tortor eu urna elementum, 
                     eu gravida purus tempus. Nulla tincidunt suscipit sollicitudin.
                     </p>
-                <div className={styles.lineBottom}></div>
+                <div className={styles.lineCentre}></div>
             </div>
-            <div className={styles.textRightBottom}>
+            <div className={styles.textRight}>
                 <p className={styles.margin}>Vivamus quis lorem at tellus vulputate 
                     luctus at nec diam. Ut ac elementum urna. 
                     Quisque blandit, magna sit amet vulputate 

@@ -29,7 +29,9 @@ const Header = () => {
 
                 
                 <div className={styles.payoff}>
-                <p>Archives, Artisan & Artistic Upcycling</p>
+                <p className={styles.p1}>Archives</p> 
+                <p className={styles.p2}>Artisan</p> 
+                <p className={styles.p3}>Artistic Upcycling</p>
                 </div>
             </header>)
 

@@ -1,3 +1,6 @@
+h1 {
+    margin: 0 20px;
+}
 
 .container p {
     line-height: 2;
@@ -5,38 +8,58 @@
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    column-gap: 25px;
+    display: block
 }
 
 .lineTop {
     background-color: #fff;
     width: 1px;
-    height: 350px;
-    margin: 0 30%;
+    height: 0;
+    margin: 0 20px;
     position: absolute;
     top: calc(100vh - 75px);
+    
+    -moz-animation: line-animation 1s linear forwards;
+    -webkit-animation: line-animation 1s linear forwards;
+    animation: line-animation 1s linear forwards;
+    animation-delay: 1.5s;
+
 }
 
-.lineBottom {
+@-moz-keyframes line-animation {
+    from { height: 0; }
+    to { height: 350px; }
+  }
+
+  @-webkit-keyframes line-animation {
+    from { height: 0; }
+    to { height: 350px; }
+  }
+
+  @keyframes line-animation {
+    from { height: 0; }
+    to { height: 350px; }
+  }    
+
+
+.lineCentre {
     background-color: #fff;
     width: 1px;
     height: 350px;
-    margin: 0 30%;
+    margin: 0 50%;
 }
 
 .lineRight {
     background-color: #fff;
     width: 1px;
     height: 350px;
-    margin: 0 80%;
+    margin: -150px calc(100% - 2em);
 }
 
-.textLeftTop {
+.textLeft {
     line-height: 3;
     font-size: 64px;
-    margin: 140px 50px 20px 0;
+    margin: 25px 50px;
 }
 
 .margin {

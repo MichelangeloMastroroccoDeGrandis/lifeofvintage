@@ -8,7 +8,9 @@
 
 .container {
     display: flex;
+    align-items: center;
     margin: 0 1em;
+    height: 80px;
 }
 
 .nav {
@@ -16,12 +18,17 @@
     overflow: hidden;
     text-align: center;
     transition: height .5s ease-out;
+    z-index: 1;
+    position: relative;
+
+    background-color: rgb(76, 74, 68);
 }
 
 .nav.open {
-    height: 100%;
+    height: 285px;
     overflow: hidden;
-    max-height: 300px;
+    max-height: 285px;
+    border-bottom: solid 2px #fff;
 }
 
 .nav ul {
@@ -42,6 +49,18 @@
     background-color: transparent;
     font-size: 48px;
     border: 0;
+}
+
+.nav li {
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    background: linear-gradient(#fff, #fff) bottom / 0 2px no-repeat;
+    transition: 1s background-size;
+}
+
+.nav li:hover {
+    background-size: 100% 2px;
 }
 
 .hamburger {
@@ -78,39 +97,50 @@
 
 .payoff p {
 
+    opacity: 0;
+    margin: 0 20px;
+    /* 
     text-shadow: 2px 2px 2px rgb(121, 118, 105);
-      /* animation properties */
+      
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
-  
-  -moz-animation: my-animation 45s linear infinite;
-  -webkit-animation: my-animation 45s linear infinite;
-  animation: my-animation 45s linear infinite;
-
+  */
+    
 }
 
-@-moz-keyframes my-animation {
-    from { -moz-transform: translateX(100%); }
-    to { -moz-transform: translateX(-100%); }
-  }
-  
-  /* for Chrome */
-  @-webkit-keyframes my-animation {
-    from { -webkit-transform: translateX(100%); }
-    to { -webkit-transform: translateX(-100%); }
-  }
-  
-  @keyframes my-animation {
-    from {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-    to {
-      -moz-transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-    }
-
+.p1 {
+    -moz-animation: header-animation .5s linear forwards;
+    -webkit-animation: header-animation .5s linear forwards;
+    animation: header-animation .5s linear forwards;
 }
+
+.p2 {
+    -moz-animation: header-animation .5s linear forwards;
+    -webkit-animation: header-animation .5s linear forwards;
+    animation: header-animation .5s linear forwards;
+    animation-delay: .5s;
+}
+
+.p3 {
+    -moz-animation: header-animation .5s linear forwards;
+    -webkit-animation: header-animation .5s linear forwards;
+    animation: header-animation .5s linear forwards;
+    animation-delay: 1s;
+}
+
+
+  @-moz-keyframes header-animation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @-webkit-keyframes header-animation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes header-animation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
