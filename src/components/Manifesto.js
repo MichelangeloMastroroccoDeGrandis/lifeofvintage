@@ -2,7 +2,7 @@ import styles from './css/Manifesto.module.css';
 const Manifesto = () => {
  return (
     <div id="manifesto">
-        <h1 className={styles.logo}>The Manifesto</h1>
+        <h1 className={styles.logo}>Manifesto</h1>
         <div className={styles.container}>
             <div>
                 <div className={styles.lineTop}></div>

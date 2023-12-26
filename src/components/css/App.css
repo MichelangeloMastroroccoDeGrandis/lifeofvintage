@@ -36,7 +36,6 @@ html::-webkit-scrollbar-thumb {
 
 .textWrap {
   width: 100%;
-  max-width: 750px;
   overflow-x: auto;
   white-space: nowrap;
   height: inherit;
@@ -72,5 +71,5 @@ html::-webkit-scrollbar-thumb {
 }
 
 .check::-webkit-scrollbar-thumb {
-  background-image: url("../images/arrow.png");
+  background-image: url("../images/check-mark.png");
 }

@@ -5,8 +5,6 @@ const Biographies = ({arr, img}) => {
 
     const myElementRef = useRef(null);
     const [positionLeft, setPositionLeft] = useState(0);
-//    const maxWidth = document.getElementsByClassName('textWrap')[0].width();
-//    const Offset = document.getElementsByClassName('textWrap')[0].offsetWidth;
     const [hitRight, setHitRight] = useState(false);
 
     useEffect(() => {
@@ -15,20 +13,25 @@ const Biographies = ({arr, img}) => {
           setPositionLeft(el.scrollLeft);
         };
 
+
         const element = myElementRef.current;
         element.addEventListener("scroll", handleScroll);
+        const maxWidth = element.scrollWidth;
+        const offSet = element.offsetWidth;
 
         return () => {
+            console.log(`add: ${positionLeft + offSet}`);
+            console.log(`tot: ${maxWidth - 100}`);
           element.removeEventListener("scroll", handleScroll);
+          if(positionLeft + offSet >=  maxWidth - 100) {
+            setHitRight(true);
+          } else {
+            setHitRight(false);
+          }
         };
-      }, []);
+      });
 
-      console.log(positionLeft);
-   //   console.log(maxWidth);
-
-//      if(positionLeft >= Offset) {
-//        setHitRight(true);
-//      }
+    
 
       const thumb = hitRight ? 'check': 'arrow';
  
