@@ -46,6 +46,10 @@ function App() {
     }
   ]
 
+  function scrollToBottom() {
+    document.getElementsSelectorAll('textWrap')
+}
+
   return (
     <div className="App">
       <Header />

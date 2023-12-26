@@ -33,3 +33,44 @@ html::-webkit-scrollbar-thumb {
   border: 2px solid #616161;
   border-radius: 5px;
 }
+
+.textWrap {
+  width: 100%;
+  max-width: 750px;
+  overflow-x: auto;
+  white-space: nowrap;
+  height: inherit;
+  position: relative;
+  overflow-y: hidden;
+  background: rgba(121, 118, 105, .5);
+  background: linear-gradient(90deg, rgba(121,118,105,1) 0%, rgba(121,118,105,0) 100%);
+}
+
+.textWrap::-webkit-scrollbar {
+  height: 20px;
+  width: 20px;
+}
+
+.textWrap::-webkit-scrollbar-track {
+  background-color: transparent;
+  border: 1px solid transparent;
+  height: 5px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+}
+
+.textWrap::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border: 1px solid transparent;
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+
+.arrow::-webkit-scrollbar-thumb {
+  background-image: url("../images/arrow.png");
+}
+
+.check::-webkit-scrollbar-thumb {
+  background-image: url("../images/arrow.png");
+}

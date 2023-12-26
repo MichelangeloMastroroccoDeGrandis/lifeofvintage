@@ -29,7 +29,6 @@
 }
 
 .bioWrap {
-    padding-right: 2em;
     line-height: 1.5;
     display: inline-block;
     width: 75%;
@@ -73,6 +72,6 @@
     background-image: url("../images/arrow.png");
   }
 
- .check::-webkit-scrollbar-thumb {
+.check::-webkit-scrollbar-thumb {
     background-image: url("../images/arrow.png");
   }
