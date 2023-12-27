@@ -1,3 +1,4 @@
+
 import styles from './css/Manifesto.module.css';
 const Manifesto = () => {
  return (

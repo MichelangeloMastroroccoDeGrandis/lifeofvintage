@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import styles from './css/Biographies.module.css';
 
-const Biographies = ({arr, img}) => {
+const Biographies = ({arr, img, name}) => {
 
     const myElementRef = useRef(null);
     const [positionLeft, setPositionLeft] = useState(0);
@@ -20,10 +20,8 @@ const Biographies = ({arr, img}) => {
         const offSet = element.offsetWidth;
 
         return () => {
-            console.log(`add: ${positionLeft + offSet}`);
-            console.log(`tot: ${maxWidth - 100}`);
           element.removeEventListener("scroll", handleScroll);
-          if(positionLeft + offSet >=  maxWidth - 100) {
+          if(positionLeft + offSet >=  maxWidth - offSet) {
             setHitRight(true);
           } else {
             setHitRight(false);
@@ -42,19 +40,13 @@ const Biographies = ({arr, img}) => {
                 </div>
     })
 
-return (
-    <div className="biographies">
-        
-        <h1>Biografie</h1>
-        <div className={styles.container} >
+return (<div className={styles.container} >
             <div className={styles.backgroundImage} style={{backgroundImage: `url("${img}")`}}>
                 <div  ref={myElementRef} className={`textWrap ${thumb}`}>
                     {textBio}
                 </div>
             </div>
-        </div>
-    </div>
-)
+        </div>)
 };
 
 export default Biographies;

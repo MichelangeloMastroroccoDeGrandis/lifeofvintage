@@ -9,7 +9,7 @@
     height: 100vh;
     overflow: hidden;
     background-size: cover;
-    background-position: center center;
+    background-position: top/center center;
 }
 
 .containerBio {
@@ -24,19 +24,46 @@
 }
 
 .bioWrap h2 {
+    width: 80%;
+    margin: 0 10%;
     font-size: 42px;
 }
 
 .bioWrap p {
-    font-size: 16px;
+    width: 80%;
+    margin: 0 10%;
+    font-size: 24px;
+    line-height: 1.5;
     text-wrap: balance;
     position: absolute;
     bottom: 0;
-    width: inherit;
 }
 
 .textWrap::-webkit-scrollbar {
-    height: 20px;
-    width: 20px;
+    height: 40px;
   }
   
+
+  @media only screen and (min-width: 1025px) {
+    
+    .bioWrap h2 {
+        font-size: 12vw;
+    }
+    
+    .bioWrap p {
+        font-size: 42px;
+    }
+
+  }
+
+  @media only screen and (min-width: 1251px) {
+    
+    .bioWrap h2 {
+        font-size: 5vw;
+    }
+    
+    .bioWrap p {
+        font-size: 22px;
+    }
+
+  }

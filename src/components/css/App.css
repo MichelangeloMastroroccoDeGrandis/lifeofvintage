@@ -15,7 +15,7 @@ a, button {
 
 h1 {
   font-size: 17vw;
-  margin: 22px 0;
+  margin: 1em 20px;
   text-align: center;
 }
 
@@ -46,8 +46,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .textWrap::-webkit-scrollbar {
-  height: 20px;
-  width: 20px;
+  height: 40px;
 }
 
 .textWrap::-webkit-scrollbar-track {
@@ -63,7 +62,7 @@ html::-webkit-scrollbar-thumb {
   border: 1px solid transparent;
   background-position:center center;
   background-repeat: no-repeat;
-  background-size: 15px;
+  background-size: 30px;
 }
 
 .arrow::-webkit-scrollbar-thumb {
@@ -73,3 +72,4 @@ html::-webkit-scrollbar-thumb {
 .check::-webkit-scrollbar-thumb {
   background-image: url("../images/check-mark.png");
 }
+

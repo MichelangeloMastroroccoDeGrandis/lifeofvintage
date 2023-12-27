@@ -1,6 +1,7 @@
 import styles from './css/Header.module.css'
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import React, { useState } from 'react';
+import { motion } from "framer-motion"
 
 const Header = () => {
 
@@ -29,9 +30,12 @@ const Header = () => {
 
                 
                 <div className={styles.payoff}>
-                <p className={styles.p1}>Archives</p> 
-                <p className={styles.p2}>Artisan</p> 
-                <p className={styles.p3}>Artistic Upcycling</p>
+                    <ul>
+                        <motion.li whileHover={{ scale: [1, .95, .85, .95] }} ><p className={styles.p1}>Archives</p></motion.li>
+                        <motion.li whileHover={{ scale: [1, .95, .85, .95] }}><p  className={styles.p2}>Artisan</p></motion.li>
+                        <motion.li whileHover={{ scale: [1, .95, .85, .95] }}><p className={styles.p3}>Artistic Upcycling</p></motion.li>
+                    </ul>
+               
                 </div>
             </header>)
 
