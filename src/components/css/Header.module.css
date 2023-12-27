@@ -111,23 +111,24 @@
 }
 
 .p1 {
-    -moz-animation: header-animation .5s linear forwards;
-    -webkit-animation: header-animation .5s linear forwards;
-    animation: header-animation .5s linear forwards;
+    -moz-animation: header-animation 1s linear forwards;
+    -webkit-animation: header-animation 1s linear forwards;
+    animation: header-animation 1s linear forwards;
+    animation-delay: 2s;
 }
 
 .p2 {
-    -moz-animation: header-animation .5s linear forwards;
-    -webkit-animation: header-animation .5s linear forwards;
-    animation: header-animation .5s linear forwards;
-    animation-delay: .5s;
+    -moz-animation: header-animation 1s linear forwards;
+    -webkit-animation: header-animation 1s linear forwards;
+    animation: header-animation 1s linear forwards;
+    animation-delay: 2.5s;
 }
 
 .p3 {
-    -moz-animation: header-animation .5s linear forwards;
-    -webkit-animation: header-animation .5s linear forwards;
-    animation: header-animation .5s linear forwards;
-    animation-delay: 1s;
+    -moz-animation: header-animation 1s linear forwards;
+    -webkit-animation: header-animation 1s linear forwards;
+    animation: header-animation 1s linear forwards;
+    animation-delay: 3s;
 }
 
 

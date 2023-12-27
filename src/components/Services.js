@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import corp from './video/corp.mp4';
 import retail from './video/retail.mp4';
 import designer from './video/designer.mp4';
@@ -6,10 +7,10 @@ const Services = ()=> {
 return (
     <div id="services" className={styles.services}>
 
-        <h1>Servizi</h1>
+        <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} exit={{ opacity: 0}} transition={{duration: 1, delay: .5}}>Servizi</motion.h1>
 
         <div className={styles.container}>
-            <div id="aziende">
+            <motion.div id="aziende" initial={{ opacity: 0, x: -500 }} whileInView={{ opacity: 1, x: 0 }} transition={{duration: 2}} viewport={{ once: true }}>
             <div className={styles.wrapVideo}>
                 <video src={corp} autoPlay={true} loop={true} muted />
             </div>
@@ -25,8 +26,8 @@ return (
                     <li><p>Rivalutazione del magazzino tessuti “fine pezza” attraverso progetti di upcycling</p></li>
                     <li><p>Rivalutazione fine serie e campionari inutilizzati attraverso progetti di upcycling in edizione limitata da rivendere nei canali di distribuzione aziendali come capsule speciali</p></li>
                 </ul>
-            </div>
-            <div id="retail">
+            </motion.div>
+            <motion.div id="retail" initial={{ opacity: 0, y: 500 }} whileInView={{ opacity: 1, y: 0 }} transition={{duration: 2}} viewport={{ once: true }}>
             <div className={styles.wrapVideo}>
             <video src={retail} autoPlay={true} loop={true} muted />
             </div>
@@ -45,8 +46,8 @@ return (
                     <li><p>Space decoration (retail, showrooms, offices, tradeshows, ecc.)</p></li>
                     <li><p>Visual brand presentations and events</p></li>
                 </ul>
-            </div>
-            <div id="designer">
+            </motion.div>
+            <motion.div id="designer" initial={{ opacity: 0, x: 500 }} whileInView={{ opacity: 1, x: 0 }} transition={{duration: 2}} viewport={{ once: true }}>
                 <div className={styles.wrapVideo}>
                 <video src={designer} autoPlay={true} loop={true} muted />
                 </div>
@@ -57,7 +58,7 @@ return (
                     <li><p>Ricerche personalizzate su commissione per acquisto o noleggio capi in archivi specifici</p></li>
                     <li><p>Consulenza e collaborazione per ricerche capi su commissione</p></li>
                 </ul>
-            </div>
+            </motion.div>
         </div>
     </div>
 )

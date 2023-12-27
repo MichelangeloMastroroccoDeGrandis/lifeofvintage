@@ -22,7 +22,7 @@ h1 {
     -moz-animation: line-animation 1s linear forwards;
     -webkit-animation: line-animation 1s linear forwards;
     animation: line-animation 1s linear forwards;
-    animation-delay: 1.5s;
+    animation-delay: 3.5s;
 
 }
 

@@ -1,7 +1,7 @@
 import styles from './css/Header.module.css'
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import React, { useState } from 'react';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 const Header = () => {
 
@@ -13,7 +13,7 @@ const Header = () => {
 
     return (<header className={styles.header}>
             <div className={styles.container}>
-                <h1 className={styles.logo}>life of vintage</h1>
+                <motion.h1 initial={{ opacity: 0, scale: 3 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 2 }} className={styles.logo}>life of vintage</motion.h1>
                 <div className={styles.hamburger} onClick={toggleNav}>
                     <div className={`${styles.hamburgerLine} ${isOpen ? styles.cross1 : ''}`}></div>
                     <div className={`${styles.hamburgerLine} ${isOpen ? styles.cross2 : ''}`}></div>

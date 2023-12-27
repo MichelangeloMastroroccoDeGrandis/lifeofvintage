@@ -1,5 +1,6 @@
 import React from 'react';
 import './components/css/App.css';
+import { motion } from 'framer-motion';
 import Header from './components/Header';
 import Manifesto from './components/Manifesto';
 import Services from './components/Services';
@@ -77,7 +78,7 @@ class App extends React.Component {
       <Manifesto />
       <Services />
       <div id="biographies">
-        <h1>Biografie</h1>
+        <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} exit={{ opacity: 0}} transition={{duration: 1, delay: .5}}>Biografie</motion.h1>
         <Biographies arr={am} img={width > height ? antonioMastroroccoPictureHorizontal : antonioMastroroccoPicture} name="antonio-mastrorocco" />
       </div>
       <Contacts />
