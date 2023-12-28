@@ -39,8 +39,7 @@ h1 {
   @keyframes line-animation {
     from { height: 0; }
     to { height: 350px; }
-  }    
-
+  }
 
 .lineCentre {
     background-color: #fff;
@@ -53,7 +52,14 @@ h1 {
     background-color: #fff;
     width: 1px;
     height: 350px;
-    margin: -80px calc(100% - 4em);
+    margin: -150px calc(100% - 20px);
+}
+
+.lineLeft {
+    background-color: #fff;
+    width: 1px;
+    height: 350px;
+    margin: -150px 20px;
 }
 
 .textLeft {
@@ -63,5 +69,94 @@ h1 {
 }
 
 .margin {
-    margin: 0 2em;
+    margin: 0 1em;
 }
+
+.eye {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.eye span {
+    font-size: 64px;
+}
+
+.eye div {
+    width: 100%;
+    position: relative;
+}
+
+.eye .following {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    transform: translate(-50%,-50%) rotate(45deg);
+    border-radius: 75% 0;
+}
+
+.eye .ball {
+    width: 15px;
+    height: 15px;
+    background: #222f3e;
+    border: 20px solid #576574;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lineRightEye {
+    width: 1px;
+    height: 300px;
+    background: #fff;
+    margin: 0 75%;
+    transform: translateY(-50px);
+}
+
+.filo {
+    margin: .5em 0;
+    font-size: 54px;
+    text-align: center;
+
+}
+
+.end {
+    margin: 1em 0;
+}
+
+.end span {
+    font-size: 78px;
+}
+
+@media only screen and (min-width: 1025px) {
+    
+    .eye {
+        margin: 1em 20px;
+    }
+
+    .eye span {
+        transform: translate(33%, 100%);
+    }
+
+    .lineRightEye {
+        transform: translateY(-100px);
+    }
+
+    .lineLeft {
+        margin: -75px 20px;
+    }
+
+    .lineRight {
+        margin: -75px calc(100% - 20px);
+    }
+
+    .end {
+        margin: 1em auto;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+  }

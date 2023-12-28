@@ -4,15 +4,45 @@
     padding-bottom: 1em;
 }
 
+.collaborators {
+    display: block;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.collaborators li {
+    list-style: none;
+    margin: 1em 0;
+}
+
+.developer {
+    display: flex;
+    justify-content: space-around;
+}
+
 .container p {
+    font-size: 22px;
     line-height: 2;
     margin: 1em 0;
 }
 
 @media only screen and (min-width: 1025px) {
-    .container p {
-        font-size: 38px;
-        margin: 2em 0;
+
+    .contacts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+
+
+  }
+
+  @media only screen and (min-width: 1251px) {
+    
+    .contacts {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
     }
 
   }

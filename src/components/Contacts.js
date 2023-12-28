@@ -5,9 +5,45 @@ return (
     <div id="contacts">
         <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} exit={{ opacity: 0}} transition={{duration: 1, delay: .5}} >Contatti</motion.h1>
         <div className={styles.container}>
-            <p>Email</p>
-            <p>Sviluppato da: Michelangelo</p>
-            <p>Lascia qui la tua email</p>
+            <div className={styles.contacts}>
+                <div className={styles.collaborators}>
+                    <ul>
+                        <li><p>Logo</p></li>
+                        <li><p>Nome</p></li>
+                        <li><p>Telefono</p></li>
+                        <li><p>Mail</p></li>
+                    </ul>
+                </div>
+                <div className={styles.collaborators}>
+                    <ul>
+                        <li><p>Logo</p></li>
+                        <li><p>Nome</p></li>
+                        <li><p>Telefono</p></li>
+                        <li><p>Mail</p></li>
+                    </ul>
+                </div>
+                <div className={styles.collaborators}>
+                    <ul>
+                        <li><p>Logo</p></li>
+                        <li><p>Nome</p></li>
+                        <li><p>Telefono</p></li>
+                        <li><p>Mail</p></li>
+                    </ul>
+                </div>
+                <div className={styles.collaborators}>
+                    <ul>
+                        <li><p>Logo</p></li>
+                        <li><p>Nome</p></li>
+                        <li><p>Telefono</p></li>
+                        <li><p>Mail</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div className={styles.developer}>
+                <p>Sviluppato da: MMDG</p>
+                <p>Link</p>
+            </div>
+            
         </div>
     </div>
 )

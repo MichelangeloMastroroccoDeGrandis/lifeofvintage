@@ -10,7 +10,7 @@ return (
         <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} exit={{ opacity: 0}} transition={{duration: 1, delay: .5}}>Servizi</motion.h1>
 
         <div className={styles.container}>
-            <motion.div id="aziende" initial={{ opacity: 0, x: -500 }} whileInView={{ opacity: 1, x: 0 }} transition={{duration: 2}} viewport={{ once: true }}>
+            <motion.div id="aziende" initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{duration: 2}} viewport={{ once: true }}>
             <div className={styles.wrapVideo}>
                 <video src={corp} autoPlay={true} loop={true} muted />
             </div>
@@ -27,7 +27,7 @@ return (
                     <li><p>Rivalutazione fine serie e campionari inutilizzati attraverso progetti di upcycling in edizione limitata da rivendere nei canali di distribuzione aziendali come capsule speciali</p></li>
                 </ul>
             </motion.div>
-            <motion.div id="retail" initial={{ opacity: 0, y: 500 }} whileInView={{ opacity: 1, y: 0 }} transition={{duration: 2}} viewport={{ once: true }}>
+            <motion.div id="retail" initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{duration: 2}} viewport={{ once: true }}>
             <div className={styles.wrapVideo}>
             <video src={retail} autoPlay={true} loop={true} muted />
             </div>
@@ -47,7 +47,7 @@ return (
                     <li><p>Visual brand presentations and events</p></li>
                 </ul>
             </motion.div>
-            <motion.div id="designer" initial={{ opacity: 0, x: 500 }} whileInView={{ opacity: 1, x: 0 }} transition={{duration: 2}} viewport={{ once: true }}>
+            <motion.div id="designer" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{duration: 2}} viewport={{ once: true }}>
                 <div className={styles.wrapVideo}>
                 <video src={designer} autoPlay={true} loop={true} muted />
                 </div>

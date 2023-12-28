@@ -13,11 +13,11 @@ const Header = () => {
 
     return (<header className={styles.header}>
             <div className={styles.container}>
-                <motion.h1 initial={{ opacity: 0, scale: 3 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 2 }} className={styles.logo}>life of vintage</motion.h1>
-                <div className={styles.hamburger} onClick={toggleNav}>
+                <motion.h1 initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 3 }} className={styles.logo}>life of vintage</motion.h1>
+                <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 3 }} className={styles.hamburger} onClick={toggleNav}>
                     <div className={`${styles.hamburgerLine} ${isOpen ? styles.cross1 : ''}`}></div>
                     <div className={`${styles.hamburgerLine} ${isOpen ? styles.cross2 : ''}`}></div>
-                </div>
+                </motion.div>
             </div>
                 <nav className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
                     <ul>
@@ -31,9 +31,9 @@ const Header = () => {
                 
                 <div className={styles.payoff}>
                     <ul>
-                        <motion.li whileHover={{ scale: [1, .95, .85, .95] }} ><p className={styles.p1}>Archives</p></motion.li>
-                        <motion.li whileHover={{ scale: [1, .95, .85, .95] }}><p  className={styles.p2}>Artisan</p></motion.li>
-                        <motion.li whileHover={{ scale: [1, .95, .85, .95] }}><p className={styles.p3}>Artistic Upcycling</p></motion.li>
+                        <motion.li whileHover={{ scale: .95 }} ><p className={styles.p1}>Archives</p></motion.li>
+                        <motion.li whileHover={{ scale: .95 }}><p  className={styles.p2}>Artisan</p></motion.li>
+                        <motion.li whileHover={{ scale: .95 }}><p className={styles.p3}>Artistic Upcycling</p></motion.li>
                     </ul>
                
                 </div>

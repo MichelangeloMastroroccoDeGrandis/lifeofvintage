@@ -80,6 +80,7 @@ class App extends React.Component {
       <div id="biographies">
         <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} exit={{ opacity: 0}} transition={{duration: 1, delay: .5}}>Biografie</motion.h1>
         <Biographies arr={am} img={width > height ? antonioMastroroccoPictureHorizontal : antonioMastroroccoPicture} name="antonio-mastrorocco" />
+        <Biographies arr={am} img={width > height ? antonioMastroroccoPictureHorizontal : antonioMastroroccoPicture} name="antonio-mastrorocco" />
       </div>
       <Contacts />
     </div>

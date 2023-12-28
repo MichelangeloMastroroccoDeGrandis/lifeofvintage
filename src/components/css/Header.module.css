@@ -203,14 +203,14 @@
     }
 
     .payoff {
-        font-size: 15vw;
+        font-size: 75px;
     }
   }
 
   @media only screen and (min-width: 1251px) {
     
     .logo {
-        font-size: 5vw;
+        font-size: 60px;
     }
 
     .nav.open {
