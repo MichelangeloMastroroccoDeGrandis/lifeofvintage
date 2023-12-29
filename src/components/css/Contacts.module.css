@@ -1,7 +1,21 @@
+.titleContacts {
+    margin: 100px 20px;
+}
+
 .container {
     display: block;
     margin: 0 2em;
     padding-bottom: 1em;
+}
+
+.emails { 
+    display: block;
+    margin: 1em 0;
+}
+
+.emails h2 {
+    margin: 1em 0;
+    font-size: 18px;
 }
 
 .collaborators {
@@ -32,6 +46,12 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 20px;
+    }
+
+    .emails {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
     }
 
 

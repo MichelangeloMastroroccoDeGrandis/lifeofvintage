@@ -1,4 +1,4 @@
-html {
+html, body {
   overflow-x: hidden;
 }
 
@@ -18,7 +18,7 @@ a, button {
 }
 
 h1 {
-  font-size: 17vw;
+  font-size: 13vw;
   margin: 1em 20px;
   text-align: center;
 }
@@ -37,43 +37,3 @@ html::-webkit-scrollbar-thumb {
   border: 2px solid #616161;
   border-radius: 5px;
 }
-
-.textWrap {
-  width: 100%;
-  overflow-x: auto;
-  white-space: nowrap;
-  height: inherit;
-  position: relative;
-  overflow-y: hidden;
-  background: rgba(121, 118, 105, .5);
-  background: linear-gradient(90deg, rgba(121,118,105,1) 0%, rgba(121,118,105,0) 100%);
-}
-
-.textWrap::-webkit-scrollbar {
-  height: 40px;
-}
-
-.textWrap::-webkit-scrollbar-track {
-  background-color: transparent;
-  border: 1px solid transparent;
-  height: 5px;
-  -webkit-background-clip: content-box;
-  background-clip: content-box;
-}
-
-.textWrap::-webkit-scrollbar-thumb {
-  background-color: transparent;
-  border: 1px solid transparent;
-  background-position:center center;
-  background-repeat: no-repeat;
-  background-size: 30px;
-}
-
-.arrow::-webkit-scrollbar-thumb {
-  background-image: url("../images/arrow.png");
-}
-
-.check::-webkit-scrollbar-thumb {
-  background-image: url("../images/check-mark.png");
-}
-

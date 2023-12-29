@@ -9,7 +9,7 @@ const Manifesto = () => {
             <div>
                 <div className={styles.lineTop}></div>
                     <p className={styles.textLeft}>
-                    Esteti pensatori(dallo sguardo pensoso?) frugano nel vintage 
+                    Esteti pensatori (dallo sguardo pensoso?) frugano nel vintage 
                     alla ricerca di un storia che rifiuta di farsi da parte.
                     </p>
                     <div className={styles.eye}>
@@ -53,32 +53,30 @@ const Manifesto = () => {
             tempo di ciò che fu al firmamento del nostro futuro.
             </p>
             <div className={styles.end}>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1}} >S</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: .5}} >a</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: 1.5}} >r</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: 1}} >à</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2}} >S</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: .5}} >a</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: 1.5}} >r</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: 1}} >à</motion.span>
             <span > </span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: .2}} >p</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: .75}} >o</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: .5}} >s</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: 1}} >s</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1}} >i</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: 1.5}} >b</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: 2}} >i</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: .35}} >l</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: 1.75}} >e</motion.span>
-            <span > </span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: .75}} >s</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1}} >v</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: .35}} >e</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: .75}} >l</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: 1.25}} >a</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: .5}} >r</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: 1.5}} >l</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: .25}} >o</motion.span>
-            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 1, delay: .2}} >?</motion.span>
-            
-           
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: .2}} >p</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: .75}} >o</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: .5}} >s</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: 1}} >s</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2}} >i</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: 1.5}} >b</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: 2}} >i</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: .35}} >l</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: 1.75}} >e</motion.span>
+            <span > </span>            
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: .75}} >s</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2}} >v</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: .35}} >e</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: .75}} >l</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: 1.25}} >a</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: .5}} >r</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: 1.5}} >l</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: .25}} >o</motion.span>
+            <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: .2}} >?</motion.span>
             </div>
         </div>
     </div>

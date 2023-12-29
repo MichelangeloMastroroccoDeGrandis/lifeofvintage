@@ -3,37 +3,38 @@ import styles from './css/Contacts.module.css';
 const Contacts = () => {
 return (
     <div id="contacts">
-        <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} exit={{ opacity: 0}} transition={{duration: 1, delay: .5}} >Contatti</motion.h1>
+        <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} exit={{ opacity: 0}} transition={{duration: 1, delay: .5}} className={styles.titleContacts}>Our Channels</motion.h1>
         <div className={styles.container}>
+            <div className={styles.emails}>
+            <h2>brand@lifeofvintage.com</h2>
+            <h2>retail@lifeofvintage.com</h2>
+            <h2>fashiondesigner@lifeofvintage.com</h2>
+            </div>
             <div className={styles.contacts}>
                 <div className={styles.collaborators}>
                     <ul>
-                        <li><p>Logo</p></li>
-                        <li><p>Nome</p></li>
+                        <li><p>ANGELO CAROLI</p></li>
                         <li><p>Telefono</p></li>
                         <li><p>Mail</p></li>
                     </ul>
                 </div>
                 <div className={styles.collaborators}>
                     <ul>
-                        <li><p>Logo</p></li>
-                        <li><p>Nome</p></li>
+                        <li><p>MAURIZIO DONADI</p></li>
                         <li><p>Telefono</p></li>
                         <li><p>Mail</p></li>
                     </ul>
                 </div>
                 <div className={styles.collaborators}>
                     <ul>
-                        <li><p>Logo</p></li>
-                        <li><p>Nome</p></li>
+                        <li><p>ANDREA MAFFEI</p></li>
                         <li><p>Telefono</p></li>
                         <li><p>Mail</p></li>
                     </ul>
                 </div>
                 <div className={styles.collaborators}>
                     <ul>
-                        <li><p>Logo</p></li>
-                        <li><p>Nome</p></li>
+                        <li><p>ANTONIO MASTROROCCO</p></li>
                         <li><p>Telefono</p></li>
                         <li><p>Mail</p></li>
                     </ul>

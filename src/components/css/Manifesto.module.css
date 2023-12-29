@@ -75,10 +75,12 @@ h1 {
 .eye {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 500px;
 }
 
 .eye span {
     font-size: 64px;
+    margin-left: 50px;
 }
 
 .eye div {
@@ -119,13 +121,13 @@ h1 {
 
 .filo {
     margin: .5em 0;
-    font-size: 54px;
+    font-size: 64px;
     text-align: center;
 
 }
 
 .end {
-    margin: 1em 0;
+    margin: 1em 0 700px;
 }
 
 .end span {
@@ -133,6 +135,10 @@ h1 {
 }
 
 @media only screen and (min-width: 1025px) {
+
+    .lineTop {
+        top: calc(100vh - 50px);
+    }
     
     .eye {
         margin: 1em 20px;
@@ -155,8 +161,9 @@ h1 {
     }
 
     .end {
-        margin: 1em auto;
+        margin: 1em auto 1000px;
         width: -moz-fit-content;
         width: fit-content;
+
     }
   }

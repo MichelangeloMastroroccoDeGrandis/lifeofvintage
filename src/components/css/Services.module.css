@@ -48,9 +48,9 @@
     }
 
     .serviceListTitle {
-        font-size: 48px;
+        font-size: 32px;
         margin: 1em 0;
-        text-align: center;
+        text-align: left;
     }
 
     .serviceList p {

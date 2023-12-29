@@ -39,7 +39,7 @@
 
 .nav span {
     display: inline-block;
-    font-size: 24px;
+    font-size: 20px;
     transform: translateY(-24px);
     margin: 0 12px;
 }
@@ -47,7 +47,7 @@
 .nav button {
     color: #fff;
     background-color: transparent;
-    font-size: 48px;
+    font-size: 32px;
     border: 0;
 }
 
@@ -96,6 +96,7 @@
 
 .payoff ul {
     list-style: none;
+    margin: 0 20px;
 }
 
 .payoff li {
@@ -106,7 +107,6 @@
 .payoff p {
     display: inline;
     opacity: 0;
-    margin: 0 20px;
 
 }
 
@@ -182,21 +182,21 @@
     }
 
     .nav.open {
-        height: 550px;
-        max-height: 550px;
+        height: 420px;
+        max-height: 420px;
     }
 
     .nav span {
         display: inline-block;
-        font-size: 42px;
+        font-size: 18px;
         transform: translateY(-36px);
         margin: 0 24px;
     }
     
     .nav button {
-        font-size: 62px;
+        font-size: 35px;
     }
-    
+
     .nav li {
         margin: 20px;
         padding: 20px;
@@ -204,13 +204,15 @@
 
     .payoff {
         font-size: 75px;
+        bottom: 50px;
     }
+
   }
 
   @media only screen and (min-width: 1251px) {
     
     .logo {
-        font-size: 60px;
+        font-size: 5vw;
     }
 
     .nav.open {
@@ -229,16 +231,12 @@
     }
 
     .nav span {
-        font-size: 32px;
         transform: translateY(-24px);
         margin: 0 12px;
     }
 
-    .nav button {
-        font-size: 48px;
-    }
     
-    .payoff {
-        font-size: 5vw;
+    .payoff p {
+        font-size: 75px;
     }
   }
