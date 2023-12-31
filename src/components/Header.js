@@ -2,8 +2,6 @@ import styles from './css/Header.module.css'
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
-import Carousel from './Carousel';
-import { items } from './CarouselItem';
 
 
 const Header = () => {
