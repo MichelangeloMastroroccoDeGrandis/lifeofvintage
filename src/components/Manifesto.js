@@ -3,8 +3,8 @@ import styles from './css/Manifesto.module.css';
 
 const Manifesto = () => {
  return (
-    <div id="manifesto">
-        <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} exit={{ opacity: 0}} transition={{duration: 1, delay: .5}}>Manifesto</motion.h1>
+    <div id="vision">
+        <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} exit={{ opacity: 0}} transition={{duration: 1, delay: .5}}>Vision</motion.h1>
         <div className={styles.container}>
             <div>
                 <div className={styles.lineTop}></div>

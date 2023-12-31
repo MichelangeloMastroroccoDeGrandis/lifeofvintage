@@ -3,7 +3,16 @@
 }
 
 .bio {
-  margin: 0 30px;
+  margin: 100px 30px;
+}
+
+.bio h2 {
+  font-size: 38px;
+}
+
+.bio p, .bio a {
+  font-size: 24px;
+  line-height: 2;
 }
 
 .container h2, .container p, .container a {
@@ -23,6 +32,10 @@
   max-width: 100px;
   transition: background-color 1s;
   transition: color .5s;
+  text-align: end;
+    display: block;
+    width: inherit;
+    margin: 0 calc(100% - 100px);
 }
 
 .container a:hover {
@@ -34,7 +47,7 @@
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   margin-top: 100px;
 }
@@ -43,7 +56,6 @@
 
     .backgroundImage {
       height: 1000px;
-      background-size: contain;
     }
 
   }
@@ -55,12 +67,13 @@
       margin-top: 200px;
     }
 
-    h2 {
-      font-size: 64px;
-    }
+    .bio {
+      margin: 0 30px;
+  }
 
-    p, a {
-      font-size: 38px;
+    .bio h2 {
+      font-size: 64px;
+      margin-top: 0;
     }
 
     .container div {
@@ -72,6 +85,9 @@
       background-size: cover;
       background-position: top center;
       margin-top: 0;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
     }
 
   }

@@ -9,16 +9,19 @@ import Contacts from './components/Contacts';
 import amPic from './components/images/am.jpeg';
 import mdPic from './components/images/md.jpeg';
 import acPic from './components/images/ac.jpg';
+import am2Pic from './components/images/am2.jpeg';
 import Socials from './components/Socials';
 
 class App extends React.Component {
 
   render() {
-    const ac = "Testo Teaser Angelo Caroli";
-    const md = "Testo Teaser Maurizio Donadi";
-    const am = "Testo Teaser Antonio Mastrorocco";
+    const ac = "Antonio Mastrorocco(One Off) è di certo la guida della banda. Di spirito sensibile ed inquieto, terminati gli studi in Botanica ed Architettura del paesaggio, Antonio volge il suo sguardo verso il Marketing e la comunicazione. Dalla metà degli anni ottanta lo troviamo, in varie vesti (direttore creativo, consulente, fondatore), ad ideare ed organizzare, con estro visionario, progetti seminali e rivoluzionari all’interno dell’universo moda(Alcuni Giovani Occidentali, Wp, Futurenet, per citarne alcuni). Con One Off, laboratorio artigianale sperimentale, dona nuova vita ad oggetti stanchi, logori, giunti oramai al capolinea dell’esistenza. Poesia che vince sulla materia, o almeno ci si tenta. Finissimo ed abile comunicatore, conversare con Antonio diventa una meravigliosa e dolce sfida. Potreste arrendervi languidamente alla sua dialettica o, sfruttando magici guizzi ed intuizioni, arricchirvi intellettualmente scoprendo lungo la via paesaggi precedentemente inesplorati.";
+    const md = "Antonio Mastrorocco(One Off) è di certo la guida della banda. Di spirito sensibile ed inquieto, terminati gli studi in Botanica ed Architettura del paesaggio, Antonio volge il suo sguardo verso il Marketing e la comunicazione. Dalla metà degli anni ottanta lo troviamo, in varie vesti (direttore creativo, consulente, fondatore), ad ideare ed organizzare, con estro visionario, progetti seminali e rivoluzionari all’interno dell’universo moda(Alcuni Giovani Occidentali, Wp, Futurenet, per citarne alcuni). Con One Off, laboratorio artigianale sperimentale, dona nuova vita ad oggetti stanchi, logori, giunti oramai al capolinea dell’esistenza. Poesia che vince sulla materia, o almeno ci si tenta. Finissimo ed abile comunicatore, conversare con Antonio diventa una meravigliosa e dolce sfida. Potreste arrendervi languidamente alla sua dialettica o, sfruttando magici guizzi ed intuizioni, arricchirvi intellettualmente scoprendo lungo la via paesaggi precedentemente inesplorati.";
+    const am = "Antonio Mastrorocco(One Off) è di certo la guida della banda. Di spirito sensibile ed inquieto, terminati gli studi in Botanica ed Architettura del paesaggio, Antonio volge il suo sguardo verso il Marketing e la comunicazione. Dalla metà degli anni ottanta lo troviamo, in varie vesti (direttore creativo, consulente, fondatore), ad ideare ed organizzare, con estro visionario, progetti seminali e rivoluzionari all’interno dell’universo moda(Alcuni Giovani Occidentali, Wp, Futurenet, per citarne alcuni). Con One Off, laboratorio artigianale sperimentale, dona nuova vita ad oggetti stanchi, logori, giunti oramai al capolinea dell’esistenza. Poesia che vince sulla materia, o almeno ci si tenta. Finissimo ed abile comunicatore, conversare con Antonio diventa una meravigliosa e dolce sfida. Potreste arrendervi languidamente alla sua dialettica o, sfruttando magici guizzi ed intuizioni, arricchirvi intellettualmente scoprendo lungo la via paesaggi precedentemente inesplorati.";
+    const am2 = "Andrea Maffei (Velvet For Philosophers) è il giovincello(fanciullo) tra i fondatori. Ingegnere, matematico, filosofo del linguaggio, informatico, gastronomo. E alla fine anche vintagista. Né carne, né pesce, né niente, avrebbe scritto giustamente qualcuno. Correre da una stella cadente all’altra è da sempre la sua vocazione. Lasciategli delle castagnete, una manciata di crepuscoli, dei porcini fritti, e magari qualche pagina di Céline, e forse lo vedrete sorridere. Il ragazzo è davvero così semplice…";
 
     const am_link = "https://antoniomastrorocco.com/";
+    const am2_link = "https://antoniomastrorocco.com/";
     const md_link = "https://www.transnomadica.com/";
     const ac_link = "https://www.angelovintage.com/";
 
@@ -31,10 +34,11 @@ class App extends React.Component {
       <Manifesto />
       <Services />
       <div id="biographies">
-        <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} exit={{ opacity: 0}} transition={{duration: 1, delay: .5}}>Who We Are</motion.h1>
+        <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} exit={{ opacity: 0}} transition={{duration: 1, delay: .5}}>Portraits</motion.h1>
         <Biographies arr={ac} img={acPic} name="Angelo" surname="Caroli" link={ac_link} />
         <Biographies arr={md} img={mdPic} name="Maurizio" surname="Donadi" link={md_link} />
         <Biographies arr={am} img={amPic} name="Antonio" surname="Mastrorocco" link={am_link} />
+        <Biographies arr={am2} img={am2Pic} name="Andrea" surname="Maffei" link={am2_link} />
       </div>
       <Contacts />
     </div>

@@ -92,6 +92,7 @@
     font-size: 64px;
     overflow: hidden;
     width: 100%;
+    text-transform: uppercase;
 }
 
 .payoff ul {

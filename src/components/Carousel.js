@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 
 const Carousel = ({images}) => {
     const [current, setCurrent] = useState(0);
-    const [autoplay, setAutoplay] = useState(null);
 
     useEffect(() => {
         setTimeout(() =>{slide()},500)

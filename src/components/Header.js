@@ -9,15 +9,6 @@ import { items } from './CarouselItem';
 const Header = () => {
 
     const [isOpen, setIsOpen] = useState(false);
-    const [isHover, setIsHover] = useState(false);
-
-    const handleMouseOver = () => {
-        setIsHover(true)
-    }
-    
-    const handleMouseOut = () => {
-        setIsHover(false)
-    }
 
     const toggleNav = () => {
         setIsOpen(!isOpen);
@@ -33,9 +24,9 @@ const Header = () => {
             </div>
                 <nav className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
                     <ul>
-                        <li><span>1</span><AnchorLink offset='100' href="#manifesto"><button>Manifesto</button></AnchorLink></li>
+                        <li><span>1</span><AnchorLink offset='100' href="#vision"><button>Vision</button></AnchorLink></li>
                         <li><span>2</span><AnchorLink offset='100' href="#services"><button>What We Do</button></AnchorLink></li>
-                        <li><span>3</span><AnchorLink offset='100' href="#biographies"><button>Who We Are</button></AnchorLink></li>
+                        <li><span>3</span><AnchorLink offset='100' href="#biographies"><button>Portraits</button></AnchorLink></li>
                         <li><span>4</span><AnchorLink offset='100' href="#contacts"><button>Our Channels</button></AnchorLink></li>
                     </ul> 
                 </nav>
@@ -43,13 +34,13 @@ const Header = () => {
                 
                 <div className={styles.payoff}>
                     <ul>
-                        <motion.li whileHover={{ scale: .95 }}><p className={styles.p1} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Archives</p></motion.li>
-                        <motion.li whileHover={{ scale: .95 }}><p className={styles.p2} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Artisan</p></motion.li>
-                        <motion.li whileHover={{ scale: .95 }}><p className={styles.p3} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Artistic Upcycling</p></motion.li>
+                        <motion.li whileHover={{ scale: .95 }}><p className={styles.p1}>Archives</p></motion.li>
+                        <motion.li whileHover={{ scale: .95 }}><p className={styles.p2}>Artisan</p></motion.li>
+                        <motion.li whileHover={{ scale: .95 }}><p className={styles.p3}>Artistic Upcycling</p></motion.li>
                     </ul>
                
                 </div>
-                {isHover &&(<Carousel images={items} />)}
+               
                 
                 
             </header>)

@@ -28,6 +28,7 @@ return (
                     <li><p>Rivalutazione fine serie e campionari inutilizzati attraverso progetti di upcycling in edizione limitata da rivendere nei canali di distribuzione aziendali come capsule speciali</p></li>
                     <li><p>Allestimento di spazi aziendali (negozi, showroom, uffici, fiere, ecc.)</p></li>
                     <li><p>Eventi di presentazioni aziendali</p></li>
+                    <li><p className={styles.mail}>brand@thelifeofvintage.com</p></li>
                 </ul>
             </motion.div>
             <motion.div id="retail" initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{duration: 2}} viewport={{ once: true }}>
@@ -45,6 +46,7 @@ return (
                     <li><p>Noleggio di oggetti rigenerati per nuovi concept display e manifestazioni culturali</p></li>
                     <li><p>Modifica di oggetti di proprietà del committente in nuova estetica Art Design</p></li>
                     <li><p>Store concept e shop-in-shop design</p></li>
+                    <li><p className={styles.mail}>retail@thelifeofvintage.com</p></li>
                 </ul>
             </motion.div>
             <motion.div id="designer" initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{duration: 2}} viewport={{ once: true }}>
@@ -57,6 +59,7 @@ return (
                     <li><p>Consultazione archivi con possibilità di acquisto</p></li>
                     <li><p>Ricerche personalizzate su commissione per acquisto o noleggio capi in archivi specifici</p></li>
                     <li><p>Consulenza e collaborazione per ricerche capi su commissione</p></li>
+                    <li><p className={styles.mail}>fashiondesigner@thelifeofvintage.com</p></li>
                 </ul>
             </motion.div>
         </div>

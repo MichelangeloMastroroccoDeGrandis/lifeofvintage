@@ -1,6 +1,6 @@
 import styles from './css/Biographies.module.css';
 
-const Biographies = ({arr, img, name, surname, link}) => {
+const Biographies = ({arr, img, name, surname,  link}) => {
 
 return (<div className={styles.container} >
             <div  className={styles.backgroundImage} style={{backgroundImage: `url("${img}")`}}></div>

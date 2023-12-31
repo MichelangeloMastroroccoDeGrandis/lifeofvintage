@@ -5,11 +5,6 @@ return (
     <div id="contacts">
         <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} exit={{ opacity: 0}} transition={{duration: 1, delay: .5}} className={styles.titleContacts}>Our Channels</motion.h1>
         <div className={styles.container}>
-            <div className={styles.emails}>
-            <h2>brand@lifeofvintage.com</h2>
-            <h2>retail@lifeofvintage.com</h2>
-            <h2>fashiondesigner@lifeofvintage.com</h2>
-            </div>
             <div className={styles.contacts}>
                 <div className={styles.collaborators}>
                     <ul>
