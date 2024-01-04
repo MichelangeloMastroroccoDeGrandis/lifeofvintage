@@ -28,10 +28,10 @@
   border: none;
   text-decoration: none;
   background-color: transparent;
-  color: #fff;
+  color: #ed4f47;
   max-width: 100px;
   transition: background-color 1s;
-  transition: color .5s;
+  transition: text-decoration 1s;
   text-align: end;
     display: block;
     width: inherit;
@@ -39,7 +39,6 @@
 }
 
 .container a:hover {
-  color: #b4b3b3;
   text-decoration: underline;
 }
 

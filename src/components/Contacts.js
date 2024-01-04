@@ -9,35 +9,34 @@ return (
                 <div className={styles.collaborators}>
                     <ul>
                         <li><p>ANGELO CAROLI</p></li>
-                        <li><p>Telefono</p></li>
-                        <li><p>Mail</p></li>
+                        <li><p>+393487704170</p></li>
+                        <li><p>a.angelo@angelo.it</p></li>
                     </ul>
                 </div>
                 <div className={styles.collaborators}>
                     <ul>
                         <li><p>MAURIZIO DONADI</p></li>
-                        <li><p>Telefono</p></li>
+                        <li><p>+19173495255</p></li>
                         <li><p>Mail</p></li>
                     </ul>
                 </div>
                 <div className={styles.collaborators}>
                     <ul>
                         <li><p>ANDREA MAFFEI</p></li>
-                        <li><p>Telefono</p></li>
-                        <li><p>Mail</p></li>
+                        <li><p>+393934385554</p></li>
+                        <li><p>sembrandreamaffei@gmail.com</p></li>
                     </ul>
                 </div>
                 <div className={styles.collaborators}>
                     <ul>
                         <li><p>ANTONIO MASTROROCCO</p></li>
-                        <li><p>Telefono</p></li>
-                        <li><p>Mail</p></li>
+                        <li><p>+393483608366</p></li>
+                        <li><p>antonio.oneoff@gmail.com</p></li>
                     </ul>
                 </div>
             </div>
             <div className={styles.developer}>
-                <p>Sviluppato da: MMDG</p>
-                <p>Link</p>
+                <p>Sviluppato da: <a href="https://mastroroccodegrandis.com/">MMDG</a></p>
             </div>
             
         </div>

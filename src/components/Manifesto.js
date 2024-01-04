@@ -45,7 +45,7 @@ const Manifesto = () => {
             </p>
         </div>
         <div className={styles.lineCentre}></div>
-        <p className={styles.filo}>Un filo esiste</p>
+        <p className={styles.filo}>Un filo esiste.</p>
     <div className={styles.lineCentre}></div>
         <div className={styles.container}>
             <p className={styles.margin}>
