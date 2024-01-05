@@ -1,0 +1,21 @@
+.container {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.button {
+    margin: 0 5px;
+    padding: 0 5px;
+    text-decoration: none;
+    background: linear-gradient(#fff, #fff) bottom / 0 2px no-repeat;
+    transition: .5s background-size;
+}
+
+.button:hover {
+    background-size: 100% 2px;
+}
+
+.button:active {
+    background-color: #fff;
+    color: #ed4f47;
+  }

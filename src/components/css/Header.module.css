@@ -59,7 +59,7 @@
     transition: 1s background-size;
 }
 
-.nav li:hover {
+.nav li:hover:not(.nonUnderline) {
     background-size: 100% 2px;
 }
 
@@ -195,7 +195,7 @@
     }
     
     .nav button {
-        font-size: 35px;
+        font-size: 28px;
     }
 
     .nav li {

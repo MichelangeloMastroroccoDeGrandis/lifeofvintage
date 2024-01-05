@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import styles from './css/Manifesto.module.css';
+import { useTranslation } from 'react-i18next'
 
 const Manifesto = () => {
+    const { t } = useTranslation("global")
  return (
     <div id="vision">
         <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} exit={{ opacity: 0}} transition={{duration: 1, delay: .5}}>Vision</motion.h1>
@@ -9,11 +11,10 @@ const Manifesto = () => {
             <div>
                 <div className={styles.lineTop}></div>
                     <p className={styles.textLeft}>
-                    Esteti pensatori (dallo sguardo pensoso?) frugano nel vintage 
-                    alla ricerca di un storia che rifiuta di farsi da parte.
+                    {t("vision.v1")}
                     </p>
                     <div className={styles.eye}>
-                        <span>Nulla sfugge ai loro occhi.</span>
+                        <span>{t("vision.v2")}</span>
                         <div>
                             
                         </div>
@@ -21,37 +22,23 @@ const Manifesto = () => {
                 <div className={styles.lineRightEye}></div>
             </div>
             <div className={styles.textRight}>
-                <p className={styles.margin}>
-                    Nelle mode e nei costumi del passato si 
-                nasconde un’inestimabile collezione di linguaggi.
-                </p>
+                <p className={styles.margin}>{t("vision.v3")}</p>
             </div>
         </div>
         <div className={styles.container}>
         <div className={styles.lineLeft}></div>
-            <p className={styles.margin}>
-                Tessuti e materia pronti ad evocare nobili salotti, 
-            campi di battaglia e vite bagnate di duro lavoro.</p>
+            <p className={styles.margin}>{t("vision.v4")}</p>
                 <div className={styles.lineRight}></div>
-            <p className={styles.margin}>
-            Dettagli e fogge a schiudere universi di simboli e 
-            segni da ricomporre ed unificare.
-            </p>
+            <p className={styles.margin}>{t("vision.v5")}</p>
         </div>
         <div className={styles.container}>
-            <p className={styles.margin}>
-                Tra riviste consumate e libri polverosi, 
-            menti inquiete si agitano febbrilmente.
-            </p>
+            <p className={styles.margin}>{t("vision.v6")}</p>
         </div>
         <div className={styles.lineCentre}></div>
-        <p className={styles.filo}>Un filo esiste.</p>
+        <p className={styles.filo}>{t("vision.v7")}</p>
     <div className={styles.lineCentre}></div>
         <div className={styles.container}>
-            <p className={styles.margin}>
-            Un filo arcano, occulto, lega le modernità senza 
-            tempo di ciò che fu al firmamento del nostro futuro.
-            </p>
+            <p className={styles.margin}>{t("vision.v8")}</p>
             <div className={styles.end}>
             <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2}} >S</motion.span>
             <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: .5}} >a</motion.span>
@@ -67,7 +54,7 @@ const Manifesto = () => {
             <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: 2}} >i</motion.span>
             <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: .35}} >l</motion.span>
             <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: 1.75}} >e</motion.span>
-            <span > </span>            
+            <span > </span>
             <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: .75}} >s</motion.span>
             <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2}} >v</motion.span>
             <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: .35}} >e</motion.span>

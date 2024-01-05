@@ -2,6 +2,7 @@ import styles from './css/Header.module.css'
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
+import LanguageSelector from './LanguageSelector';
 
 
 const Header = () => {
@@ -26,6 +27,7 @@ const Header = () => {
                         <li><span>2</span><AnchorLink offset='100' href="#services"><button>What We Do</button></AnchorLink></li>
                         <li><span>3</span><AnchorLink offset='100' href="#biographies"><button>Portraits</button></AnchorLink></li>
                         <li><span>4</span><AnchorLink offset='100' href="#contacts"><button>Our Channels</button></AnchorLink></li>
+                        <li className={styles.nonUnderline}><span>Lang</span><LanguageSelector /></li>
                     </ul> 
                 </nav>
 
