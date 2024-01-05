@@ -17,7 +17,7 @@ return (
                     <ul>
                         <li><p>MAURIZIO DONADI</p></li>
                         <li><p>+19173495255</p></li>
-                        <li><p>Mail</p></li>
+                        <li><p>maurizio@transnomadica.com</p></li>
                     </ul>
                 </div>
                 <div className={styles.collaborators}>
