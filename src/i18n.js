@@ -16,8 +16,9 @@ i18n
         translation: en,
       },
     },
-    lng: 'it',
+    lng: 'cimode',
     fallbackLng: 'it',
+    fallbackLocale: 'it',
     interpolation: {
       escapeValue: false,
     },

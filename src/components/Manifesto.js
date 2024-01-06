@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 import styles from './css/Manifesto.module.css';
 import { useTranslation } from 'react-i18next'
 
+
+    
 const Manifesto = () => {
     const { t } = useTranslation("global")
+
  return (
     <div id="vision">
         <motion.h1 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} exit={{ opacity: 0}} transition={{duration: 1, delay: .5}}>Vision</motion.h1>
@@ -39,7 +42,9 @@ const Manifesto = () => {
     <div className={styles.lineCentre}></div>
         <div className={styles.container}>
             <p className={styles.margin}>{t("vision.v8")}</p>
-            <div className={styles.end}>
+
+            <div className={styles.end} >
+            
             <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2}} >S</motion.span>
             <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: .5}} >a</motion.span>
             <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 2, delay: 1.5}} >r</motion.span>
