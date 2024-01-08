@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import styles from './css/LanguageSelector.module.css'
+import styles from '../css/LanguageSelector.module.css'
 const LanguageSelector = () => {
     const { t, i18n } = useTranslation("global")
 

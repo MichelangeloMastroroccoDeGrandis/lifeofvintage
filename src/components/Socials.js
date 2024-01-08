@@ -1,5 +1,5 @@
-import styles from './css/Socials.module.css';
-import linkedin from './images/linkedin.png';
+import styles from '../css/Socials.module.css';
+import linkedin from '../media/images/linkedin.png';
 const Socials = () => {
     return(
         <a href="https://www.linkedin.com/" rel="noreferrer" target="_blank">
