@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import styles from './css/Contacts.module.css';
+import styles from '../css/Contacts.module.css';
 const Contacts = () => {
 return (
     <div id="contacts">

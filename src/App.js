@@ -1,22 +1,20 @@
 import React from 'react';
 import './components/css/App.css';
 import { motion } from 'framer-motion';
-import Header from './components/Header';
-import Manifesto from './components/Manifesto';
-import Services from './components/Services';
-import Biographies from './components/Biographies';
-import Contacts from './components/Contacts';
-import amPic from './components/images/am.jpeg';
-import mdPic from './components/images/md.jpeg';
-import acPic from './components/images/ac.jpg';
-import am2Pic from './components/images/am2.jpg';
+import Header from './sections/Header';
+import Manifesto from './sections/Manifesto';
+import Services from './sections/Services';
+import Biographies from './sections/Biographies';
+import Contacts from './sections/Contacts';
+import amPic from './media/images/am.jpeg';
+import mdPic from './media/images/md.jpeg';
+import acPic from './media/images/ac.jpg';
+import am2Pic from './media/images/am2.jpg';
 import Socials from './components/Socials';
 import { useTranslation } from 'react-i18next'
 
 const App = () => {
   const { t } = useTranslation("global")
-
-  
 
     const angeloCaroli = t("biografie.acar");
     const maurizioDonadi = t("biografie.mdon");
@@ -24,11 +22,10 @@ const App = () => {
     const andreaMaffei = t("biografie.amaf");
 
     const am_link = "https://antoniomastrorocco.com/";
-    const am2_link = "https://antoniomastrorocco.com/";
+    const am2_link = "https://www.velvetforphilosophers.com/";
     const md_link = "https://www.transnomadica.com/";
     const ac_link = "https://www.angelovintage.com/";
 
-    
     return (
 
       <div className="App">

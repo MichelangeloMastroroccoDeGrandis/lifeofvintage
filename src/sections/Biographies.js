@@ -1,4 +1,4 @@
-import styles from './css/Biographies.module.css';
+import styles from '../css/Biographies.module.css';
 import { useTranslation } from 'react-i18next'
 
 const Biographies = ({arr, img, name, surname,  link}) => {

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import styles from './css/Services.module.css';
+import styles from '../css/Services.module.css';
 import { useTranslation } from 'react-i18next'
 const Services = ()=> {
     const { t } = useTranslation("global")

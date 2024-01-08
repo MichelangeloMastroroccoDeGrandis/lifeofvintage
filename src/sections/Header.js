@@ -1,8 +1,8 @@
-import styles from './css/Header.module.css'
+import styles from '../css/Header.module.css'
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
-import LanguageSelector from './LanguageSelector';
+import LanguageSelector from '../components/LanguageSelector';
 
 
 const Header = () => {

@@ -43,3 +43,17 @@ html::-webkit-scrollbar-thumb {
   border: 2px solid #ed4f47;
   border-radius: 5px;
 }
+
+.App .pointer { 
+  cursor: crosshair; 
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #ed4f47;
+}
+
+::selection {
+  color: #fff;
+  background: #ed4f47;
+}
