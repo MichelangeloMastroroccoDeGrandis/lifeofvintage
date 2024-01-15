@@ -10,6 +10,7 @@ import amPic from './media/images/am.jpeg';
 import mdPic from './media/images/md.jpeg';
 import acPic from './media/images/ac.jpg';
 import am2Pic from './media/images/am2.jpg';
+import CookieConsent from "react-cookie-consent";
 
 import { useTranslation } from 'react-i18next'
 
@@ -20,6 +21,8 @@ const App = () => {
     const maurizioDonadi = t("biografie.mdon");
     const antonioMastrorocco = t("biografie.amas");
     const andreaMaffei = t("biografie.amaf");
+    const cookie = t("cookie.text");
+    const cookieText = t("cookie.button");
 
     const am_link = "https://antoniomastrorocco.com/";
     const am2_link = "https://www.velvetforphilosophers.com/";
@@ -30,7 +33,9 @@ const App = () => {
 
       <div className="App">
       <Header />
-
+      <CookieConsent
+      buttonStyle={{ background: "#ed4f47", color: "#fff"}}
+      buttonText={cookieText}>{cookie}</CookieConsent>
       <Manifesto />
       <Services />
       <div id="biographies">

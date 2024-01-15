@@ -1,4 +1,8 @@
 {
+    "cookie": {
+        "text": "This website uses cookies to enhance the user experience.",
+        "button": "I understand"
+    },
     "vision": {
         "v1": "Who are we? Why are we so curious about the past e its miriade of stories, languages, anecdotes, objects and characters?",
         "v2": "It’s simples.",
